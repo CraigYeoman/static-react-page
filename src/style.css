@@ -1,4 +1,6 @@
-
+body {
+    margin: 0;
+}
 
 .nav--bar {
     display: flex;
@@ -6,6 +8,7 @@
     justify-content: space-between;
     background-color: #21222A;
     height: 91px;
+    font-family: 'Inter', sans-serif
 }
 
 .nav--title {
@@ -18,7 +21,6 @@
     color: #61DAFB;
     font-size: 28px;
     font-weight: 800;
-    font-family: Inter;
 }
 
 .nav--icon {
@@ -29,6 +31,41 @@
 .nav--heading {
     color: #DEEBF8;
     font-size: 21px;
-    font-weight: 600px;
+    font-weight: bold;
     padding-right: 26px;
+}
+
+.main--container {
+    background-color: #282D35;
+    height: 100vh;
+    font-family: 'Inter', sans-serif
+}
+
+.main--header {
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 65px;
+    padding-left: 30px;
+}
+
+.main--list {
+    list-style: none;
+}
+
+.main--list > li {
+    color: #FFFFFF; 
+    padding-top: 25px;
+    font-size: 16px;
+    padding-left: 5;
+    margin-left: 20px;
+}
+
+.main--list > li::before {
+    content: "\2022";
+    color: #61DAFB;
+    font-weight: 900; /* If you want it to be bold */
+    display: inline-block;
+    width: 1em; 
+    margin-left: -1em; 
 }
